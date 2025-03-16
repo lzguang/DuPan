@@ -10,6 +10,25 @@
 
 https://www.blueskyxn.com/202410/7228.html 这一篇博文，里面有现成的代码，能在ql上面使用，就拿过来叫大模型改了改。
 
+# Cookie获取
+
+打开：https://pan.baidu.com ，F12，网络，main文档里面把cookie，全部弄到变量里面，我的变量为 `XFI=***ndut_fmt=***`（只列出了开头和结尾两个变量）
+
+
+这个 [fork](https://gist.github.com/RunwangGuo/48d98ff5763c9a3883907e9a593e18fb ) 的修改应该是只需要 `  "BDUSS=xxxx; BAIDUID=xxxx;" ` 但是我找不到 BAIDUID 这个变量
+
+
+
+# TG通知示例
+
+当天第一次成功签到
+
+![image](https://raw.githubusercontent.com/tunecc/DuPan/refs/heads/main/resources/photo/first.jpg)
+
+当天重复签到
+
+![image](https://raw.githubusercontent.com/tunecc/DuPan/refs/heads/main/resources/photo/repeat.jpg)
+
 # 注意（[引用自原文](https://www.blueskyxn.com/202410/7228.html)）
 
 基于Python，需要Cookie
