@@ -5,6 +5,7 @@ import requests
 
 # 从环境变量中获取相关参数
 BAIDU_COOKIE = os.environ.get('BAIDU_COOKIE', '')
+print(BAIDU_COOKIE)
 TELEGRAM_BOT_TOKEN = os.environ.get('TG_BOT_TOKEN', '')
 TELEGRAM_CHAT_ID = os.environ.get('TG_USER_ID', '')
 
