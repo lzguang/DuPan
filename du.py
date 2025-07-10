@@ -146,11 +146,15 @@ def send_telegram_once(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {'chat_id': TELEGRAM_CHAT_ID, 'text': message}
     try:
-        resp = requests.post(url, json=payload, timeout=10)
+        resp = requests.post(url, params=payload, headers={
+                  'content-type':'application/json'
+              })
+        print(resp.json())
         if resp.status_code == 200:
             print("Telegram消息发送成功")
         else:
             print("Telegram消息发送失败, 状态码:", resp.status_code)
+            print(resp.text)
     except Exception as e:
         print("发送Telegram消息时出现异常:", e)
 
